@@ -18,9 +18,11 @@
 
 namespace Unagi;
 
-// Useful global constants.
-use function Unagi\Sample\setup;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
+// Useful global constants.
 define( 'UNAGI_VERSION', '0.1.0' );
 define( 'UNAGI_URL', plugin_dir_url( __FILE__ ) );
 define( 'UNAGI_PATH', plugin_dir_path( __FILE__ ) );
