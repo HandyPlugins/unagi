@@ -5,6 +5,6 @@
  * @package Unagi
  */
 
-namespace Unagi\Constnats;
+namespace Unagi\Constants;
 
 const USER_META_KEY = 'unagi_notices';

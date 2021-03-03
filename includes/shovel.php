@@ -9,7 +9,7 @@
 
 namespace Unagi\Shovel;
 
-use const Unagi\Constnats\USER_META_KEY;
+use const Unagi\Constants\USER_META_KEY;
 use function Unagi\Utils\show_notifications_nicely;
 
 // phpcs:disable WordPress.WhiteSpace.PrecisionAlignment.Found
