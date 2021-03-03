@@ -93,7 +93,7 @@ function prepare_notification_info() {
 	$notification_content = ( isset( $notification['content'] ) ? $notification['content'] : '' );
 
 	if ( function_exists( 'mb_convert_encoding' ) ) { // convert multibyte strings
-		$notification_content = mb_convert_encoding( $notification['content'], 'HTML-ENTITIES', 'UTF-8' );
+		$notification_content = mb_convert_encoding( $notification_content, 'HTML-ENTITIES', 'UTF-8' );
 	}
 
 	if ( empty( $notification_content ) ) {
