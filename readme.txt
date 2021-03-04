@@ -39,9 +39,9 @@ Bug reports and pull requests are welcome on [Github](https://github.com/HandyPl
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Some of the messages are missing under the notifications page? =
 
-An answer to that question.
+This plugin only respects the messages that use `notice` class.  And, the notices that added to a particular page might not be shown. You can use `unagi_show_diff` filter to display them.
 
 == Screenshots ==
 

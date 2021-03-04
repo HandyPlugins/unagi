@@ -20,10 +20,9 @@ It buffers all the output that hooked into `admin_notices` action and then displ
 - By default, plugin saves the output in the usermeta and renders saved output. If you need to avoid DB calls, you can use `unagi_show_notifications_nicely` filter.
 
 
-
 ## Support ##
 This is a developer's portal for Unagi and should _not_ be used for support. Please visit the [support forums](https://wordpress.org/support/plugin/unagi/) if you need to submit a support request.
 
 ## Credits
-* [unDraw](https://undraw.co/illustrations)
-* [10up Plugin Scaffold](https://github.com/10up/plugin-scaffold)
+* Icons & Banners - [unDraw](https://undraw.co/illustrations)
+* Scaffolding - [10up Plugin Scaffold](https://github.com/10up/plugin-scaffold)
