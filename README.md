@@ -3,7 +3,7 @@
 Unagi is a WordPress plugin that helps you to keep the admin dashboard clean. It's a zero-configuration plugin, just activate and rid of the nags.
 
 
-![Alt Text](https://media.giphy.com/media/ubpB6XcvpYMF2/giphy.gif)
+![Unagi](https://media.giphy.com/media/ubpB6XcvpYMF2/giphy.gif)
 
 
 > Unagi - "It's not something you are , it's something you have." 
