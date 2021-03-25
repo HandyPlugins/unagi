@@ -23,7 +23,7 @@ function setup() {
 	};
 
 	add_action( 'admin_notices', $n( 'start_shoveling' ), PHP_INT_MIN );
-	add_action( 'admin_notices', $n( 'stop_shoveling' ), PHP_INT_MAX );
+	add_action( 'all_admin_notices', $n( 'stop_shoveling' ), PHP_INT_MAX );
 }
 
 /**
