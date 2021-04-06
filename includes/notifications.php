@@ -58,15 +58,16 @@ function notification_screen() {
 
 	$output = $unagi_nags;
 
+	$output = '<h2>' . esc_html__( 'Notifications', 'unagi' ) . '</h2>';
+
 	if ( show_notifications_nicely() ) {
 		$notification_info = prepare_notification_info();
 
-		$output = $notification_info['content'];
-
+		$output .= $notification_info['content'];
 	}
 
-	if ( empty( $output ) ) {
-		$output = sprintf(
+	if ( empty( $notification_info['content'] ) ) {
+		$output .= sprintf(
 			'<div class="notice notice-success"><p>%s</p></div>',
 			esc_html__( 'Woohoo! There aren\'t any notifications for you.', 'unagi' )
 		);
