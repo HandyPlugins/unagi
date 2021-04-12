@@ -56,8 +56,6 @@ function add_notification_page() {
 function notification_screen() {
 	global $unagi_nags;
 
-	$output = $unagi_nags;
-
 	$output = '<h1>' . esc_html__( 'Notifications', 'unagi' ) . '</h1>';
 
 	if ( show_notifications_nicely() ) {
