@@ -8,7 +8,7 @@
 namespace Unagi\Utils;
 
 /**
- * Determine displauing notifications nicely vs directly
+ * Determine displaying notifications nicely vs directly
  * When we show them "nicely" we parse the buffer and count notifications node from the dom
  * And we keep the count
  *
