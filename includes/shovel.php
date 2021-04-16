@@ -110,15 +110,14 @@ function stop_shoveling() {
  * @return bool
  */
 function is_shoveling() {
-	$is_shoveling = true;
+	$current_screen = get_current_screen();
+	$is_shoveling   = true;
 
 	/**
 	 * Dirty way to make it work with WooCommerce setup wizard
 	 * It is what it is!!!...
 	 */
-	if ( isset( $_SERVER['REQUEST_URI'] )
-		 && false !== stripos( $_SERVER['REQUEST_URI'], 'wc-admin' )
-		 && false !== stripos( $_SERVER['REQUEST_URI'], 'setup-wizard' ) ) {
+	if ( ! empty( $current_screen ) && false !== stripos( $current_screen->base, 'woocommerce' ) ) {
 		$is_shoveling = false;
 	}
 
