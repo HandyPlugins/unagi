@@ -56,16 +56,17 @@ function add_notification_page() {
 function notification_screen() {
 	global $unagi_nags;
 
-	$output = '<h1>' . esc_html__( 'Notifications', 'unagi' ) . '</h1>';
+	$output = $unagi_nags;
 
 	if ( show_notifications_nicely() ) {
 		$notification_info = prepare_notification_info();
 
-		$output .= $notification_info['content'];
+		$output = $notification_info['content'];
+
 	}
 
-	if ( empty( $notification_info['content'] ) ) {
-		$output .= sprintf(
+	if ( empty( $output ) ) {
+		$output = sprintf(
 			'<div class="notice notice-success"><p>%s</p></div>',
 			esc_html__( 'Woohoo! There aren\'t any notifications for you.', 'unagi' )
 		);
@@ -74,8 +75,11 @@ function notification_screen() {
 	$output = apply_filters( 'unagi_notification_output', $output );
 
 	?>
-	<div id="unagi-notification-center">
-		<?php echo $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+	<div class="wrap">
+		<h1><?php esc_html_e( 'Notifications', 'unagi' ); ?></h1>
+		<div id="unagi-notification-center">
+			<?php echo $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+		</div>
 	</div>
 	<?php
 }
