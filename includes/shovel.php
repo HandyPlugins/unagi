@@ -46,7 +46,23 @@ function stop_shoveling() {
 	if ( ! is_shoveling() ) {
 		return;
 	}
-	$unagi_nags = ob_get_clean();
+
+	$buffer = ob_get_clean();
+
+	/**
+	 * Don't remove script/styles if any
+	 * Plugins always intend to do weird things!!1
+	 * Such as injecting CSS/JS with admin notices :facepalm:
+	 */
+	preg_match_all( '@<(script|style)[^>]*?>.*?</\\1>@si', $buffer, $inline_output );
+
+	if ( ! empty( $inline_output[0] ) ) {
+		foreach ( $inline_output[0] as $inline_script ) {
+			echo $inline_script;  // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		}
+	}
+
+	$unagi_nags = trim( preg_replace( '@<(script|style)[^>]*?>.*?</\\1>@si', '', $buffer ) );
 
 	if ( ! show_notifications_nicely() ) {
 		return;
