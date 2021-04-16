@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../includes/notifications.php:32, ../includes/notifications.php:45
+#: ../includes/notifications.php:32, ../includes/notifications.php:45, ../includes/notifications.php:79
 msgid "Notifications"
 msgstr ""
 
