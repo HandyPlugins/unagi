@@ -2,9 +2,9 @@
 Contributors:      handyplugins,m_uysl
 Tags:              notification,nags,admin notice,
 Requires at least: 5.0
-Tested up to:      5.7
+Tested up to:      5.7.1
 Requires PHP:      5.6
-Stable tag:        0.1.1
+Stable tag:        0.1.2
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +24,7 @@ It buffers all the output that hooked into `admin_notices` action and then displ
 - `edit_posts` is the default capability. It can be overridden with `unagi_required_capability` filter.
 - By default, plugin saves the output in the usermeta and renders saved output. If you need to avoid DB calls, you can use `unagi_show_notifications_nicely` filter.
 
-![Unagi](https://media.giphy.com/media/ubpB6XcvpYMF2/giphy.gif)
+[https://media.giphy.com/media/ubpB6XcvpYMF2/giphy.gif  Unagi]
 
 > Unagi - "It's not something you are , it's something you have."
 
@@ -51,6 +51,11 @@ This plugin only respects the messages that use `notice` class.  And, the notice
 3. Notifications screen
 
 == Changelog ==
+
+= 0.1.2 =
+* Revert output hook change. (It causes regression when `admin_notices` removes on a page entirely)
+* Add heading to notifications page. Props [@sanzeeb3](https://github.com/sanzeeb3)
+* Improve WooCommerce compatibility
 
 = 0.1.1 =
 * Change output hook
