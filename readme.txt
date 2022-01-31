@@ -4,7 +4,7 @@ Tags:              notification,nags,admin notice,
 Requires at least: 5.0
 Tested up to:      5.9
 Requires PHP:      5.6
-Stable tag:        0.1.2
+Stable tag:        0.1.3
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Unagi clean-up your WordPress notices from the dashboard and show them under the
 
 == Description ==
 
-Unagi is a WordPress plugin that helps you to keep the admin dashboard clean. It's a zero-configuration plugin, just activate and rid of the nags.
+Unagi is a WordPress plugin that helps keep the admin dashboard clean. It's a zero-configuration plugin; just activate and get rid of the nags.
 
 = How does it work? =
 
@@ -23,8 +23,6 @@ It buffers all the output that hooked into `admin_notices` action and then displ
 - The plugin only respects notifications messages that have "notice" class by default. Most of the plugins use "notice" class as a wrapper of the output. You can use `unagi_xpath_expression` filter to customize targered xpath.
 - `edit_posts` is the default capability. It can be overridden with `unagi_required_capability` filter.
 - By default, plugin saves the output in the usermeta and renders saved output. If you need to avoid DB calls, you can use `unagi_show_notifications_nicely` filter.
-
-[https://media.giphy.com/media/ubpB6XcvpYMF2/giphy.gif  Unagi]
 
 > Unagi - "It's not something you are , it's something you have."
 
@@ -51,6 +49,9 @@ This plugin only respects the messages that use `notice` class.  And, the notice
 3. Notifications screen
 
 == Changelog ==
+
+= 0.1.3 =
+* Tested with WP 5.9 Props [@ZgrK](https://github.com/ZgrK).
 
 = 0.1.2 =
 * Revert output hook change. (It causes regression when `admin_notices` removes on a page entirely)

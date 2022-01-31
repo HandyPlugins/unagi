@@ -3,7 +3,7 @@
  * Plugin Name:       Unagi
  * Plugin URI:        https://github.com/HandyPlugins/unagi
  * Description:       Unagi clean-up your WordPress notices from the dashboard and show them under the "Notifications" pages.
- * Version:           0.1.2
+ * Version:           0.1.3
  * Requires at least: 5.0
  * Requires PHP:      5.6
  * Author:            HandyPlugins
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Useful global constants.
-define( 'UNAGI_VERSION', '0.1.2' );
+define( 'UNAGI_VERSION', '0.1.3' );
 define( 'UNAGI_URL', plugin_dir_url( __FILE__ ) );
 define( 'UNAGI_PATH', plugin_dir_path( __FILE__ ) );
 define( 'UNAGI_INC', UNAGI_PATH . 'includes/' );
