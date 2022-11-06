@@ -2,7 +2,7 @@
 Contributors:      handyplugins,m_uysl
 Tags:              notification,nags,admin notice,
 Requires at least: 5.0
-Tested up to:      6.0
+Tested up to:      6.1
 Requires PHP:      5.6
 Stable tag:        0.1.3
 License:           GPLv2 or later
