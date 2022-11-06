@@ -1,4 +1,4 @@
-# Copyright (C) 2021 unagi
+# Copyright (C) 2022 unagi
 # This file is distributed under the same license as the unagi package.
 msgid ""
 msgstr ""
