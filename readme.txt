@@ -2,11 +2,12 @@
 Contributors:      handyplugins,m_uysl
 Tags:              notification,nags,admin notice,
 Requires at least: 5.0
-Tested up to:      6.1
+Tested up to:      6.2
 Requires PHP:      5.6
-Stable tag:        0.1.4
+Stable tag:        0.1.5
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
+Donate link:       https://handyplugins.co/donate/
 
 Unagi clean-up your WordPress notices from the dashboard and show them under the "Notifications" pages.
 
@@ -25,6 +26,13 @@ It buffers all the output that hooked into `admin_notices` action and then displ
 - By default, plugin saves the output in the usermeta and renders saved output. If you need to avoid DB calls, you can use `unagi_show_notifications_nicely` filter.
 
 > Unagi - "It's not something you are , it's something you have."
+
+If you like our Unagi plugin, then consider checking out our other projects:
+
+* <a href="https://handyplugins.co/magic-login-pro/" rel="friend">Magic Login Pro</a> – Easy, secure, and passwordless authentication for WordPress.
+* <a href="https://handyplugins.co/handywriter/" rel="friend">Handywriter</a> – AI-powered writing assistant that can help you create content for your WordPress.
+* <a href="https://handyplugins.co/paddlepress-pro/" rel="friend">PaddlePress PRO</a> – Paddle Plugin for WordPress
+
 
 = Contributing & Bug Report =
 Bug reports and pull requests are welcome on [Github](https://github.com/HandyPlugins/unagi).
@@ -49,6 +57,11 @@ This plugin only respects the messages that use `notice` class.  And, the notice
 3. Notifications screen
 
 == Changelog ==
+
+= 0.1.5 (March 03, 2023) =
+* Disable warnings with non-well-formed DomDocument
+* Dependency update
+* Tested with WP 6.2
 
 = 0.1.4 (November 6, 2022) =
 * Tested with WP 6.1 Props [@ZgrK](https://github.com/ZgrK).
