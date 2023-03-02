@@ -1,22 +1,45 @@
-# Copyright (C) 2022 unagi
-# This file is distributed under the same license as the unagi package.
+# Copyright (C) 2023 HandyPlugins
+# This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: unagi\n"
+"Project-Id-Version: Unagi 0.1.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/unagi\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2023-03-02T21:15:22+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: unagi\n"
 
-#: ../includes/notifications.php:32, ../includes/notifications.php:45, ../includes/notifications.php:79
+#. Plugin Name of the plugin
+msgid "Unagi"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/HandyPlugins/unagi"
+msgstr ""
+
+#. Description of the plugin
+msgid "Unagi clean-up your WordPress notices from the dashboard and show them under the \"Notifications\" pages."
+msgstr ""
+
+#. Author of the plugin
+msgid "HandyPlugins"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://handyplugins.co/"
+msgstr ""
+
+#: includes/notifications.php:32
+#: includes/notifications.php:45
+#: includes/notifications.php:79
 msgid "Notifications"
 msgstr ""
 
-#: ../includes/notifications.php:71
+#: includes/notifications.php:71
 msgid "Woohoo! There aren't any notifications for you."
 msgstr ""
