@@ -107,6 +107,7 @@ function prepare_notification_info() {
 	}
 
 	$doc = new DOMDocument( '1.0', 'UTF-8' );
+	libxml_use_internal_errors( true );
 	$doc->loadHTML( $notification_content );
 	$xpath = new DOMXPath( $doc );
 
