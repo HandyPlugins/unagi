@@ -6,7 +6,7 @@ Unagi is a WordPress plugin that helps you to keep the admin dashboard clean. It
 ![Unagi](https://media.giphy.com/media/ubpB6XcvpYMF2/giphy.gif)
 
 
-> Unagi - "It's not something you are , it's something you have." 
+> Unagi - "It's not something you are , it's something you have."
 
 
 ## How does it work? ##
@@ -24,5 +24,5 @@ It buffers all the output that hooked into `admin_notices` action and then displ
 This is a developer's portal for Unagi and should _not_ be used for support. Please visit the [support forums](https://wordpress.org/support/plugin/unagi/) if you need to submit a support request.
 
 ## Credits
-* Icons & Banners - [unDraw](https://undraw.co/illustrations)
-* Scaffolding - [10up Plugin Scaffold](https://github.com/10up/plugin-scaffold)
+* [unDraw](https://undraw.co/illustrations)
+* [10up Toolkit](https://github.com/10up/10up-toolkit)
