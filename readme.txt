@@ -2,7 +2,7 @@
 Contributors:      handyplugins,m_uysl
 Tags:              notification,nags,admin notice,
 Requires at least: 5.0
-Tested up to:      6.2
+Tested up to:      6.3
 Requires PHP:      5.6
 Stable tag:        0.1.5
 License:           GPLv2 or later
@@ -30,6 +30,7 @@ It buffers all the output that hooked into `admin_notices` action and then displ
 If you like our Unagi plugin, then consider checking out our other projects:
 
 * <a href="https://handyplugins.co/magic-login-pro/" rel="friend">Magic Login Pro</a> – Easy, secure, and passwordless authentication for WordPress.
+* <a href="https://handyplugins.co/easy-text-to-speech/" rel="friend">Easy Text-to-Speech for WordPress</a> – Transform your textual content into high-quality synthesized speech with Amazon Polly.
 * <a href="https://handyplugins.co/handywriter/" rel="friend">Handywriter</a> – AI-powered writing assistant that can help you create content for your WordPress.
 * <a href="https://handyplugins.co/paddlepress-pro/" rel="friend">PaddlePress PRO</a> – Paddle Plugin for WordPress
 
