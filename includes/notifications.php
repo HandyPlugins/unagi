@@ -95,8 +95,9 @@ function prepare_notification_info() {
 
 	$notification_content = ( isset( $notification['content'] ) ? $notification['content'] : '' );
 
-	if ( function_exists( 'mb_convert_encoding' ) ) { // convert multibyte strings
-		$notification_content = mb_convert_encoding( $notification_content, 'HTML-ENTITIES', 'UTF-8' );
+	if ( function_exists( 'mb_encode_numericentity' ) ) {
+		$convmap              = array( 0x80, 0x10ffff, 0, 0xffffff ); // Range of characters to convert
+		$notification_content = mb_encode_numericentity( $notification_content, $convmap, 'UTF-8' );
 	}
 
 	if ( empty( $notification_content ) ) {
