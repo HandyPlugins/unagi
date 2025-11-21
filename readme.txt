@@ -2,9 +2,9 @@
 Contributors:      handyplugins, m_uysl
 Tags:              notification,nags,admin notice,
 Requires at least: 5.0
-Tested up to:      6.8
+Tested up to:      6.9
 Requires PHP:      5.6
-Stable tag:        0.2.1
+Stable tag:        0.2.2
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 Donate link:       https://handyplugins.co/donate/
@@ -60,6 +60,10 @@ This plugin only respects the messages that use `notice` class.  And, the notice
 3. Notifications screen
 
 == Changelog ==
+
+= 0.2.2 (November 21, 2025) =
+* Dependency update.
+* Tested with WP 6.9
 
 = 0.2.1 (July 11, 2024) =
 * Added playground blueprint.
